@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 const services = [
     {
@@ -41,7 +41,7 @@ const services = [
     },
 ];
 
-const containerVariants = {
+const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
         opacity: 1,
@@ -51,7 +51,7 @@ const containerVariants = {
     },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
         opacity: 1,
@@ -72,7 +72,7 @@ export default function Services() {
                     {/* Left Column - Header */}
                     <div className="w-full lg:w-1/3 flex flex-col justify-start">
                         <span className="text-sm font-mono text-white/60 mb-6 tracking-wider">
-              // EXPERTISE
+                            {"// EXPERTISE"}
                         </span>
                         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading text-white leading-tight">
                             <span className="text-white/80">Services</span>

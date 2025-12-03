@@ -22,7 +22,7 @@ export default function Home() {
   const vantaRef = useRef(null);
 
   useEffect(() => {
-    let intervalId: NodeJS.Timeout;
+    let intervalId: NodeJS.Timeout | undefined;
 
     const initVanta = () => {
       // Check if scripts are loaded and effect isn't already set

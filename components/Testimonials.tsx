@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 const testimonials = [
     {
@@ -22,7 +22,7 @@ const testimonials = [
     }
 ];
 
-const containerVariants = {
+const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
         opacity: 1,
@@ -32,7 +32,7 @@ const containerVariants = {
     },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
         opacity: 1,
@@ -50,7 +50,7 @@ export default function Testimonials() {
             <div className="max-w-[90%] mx-auto">
                 <div className="mb-16">
                     <span className="text-sm font-mono text-white/60 tracking-wider block mb-4">
-            // WHAT THEY SAY
+                        {"// WHAT THEY SAY"}
                     </span>
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading">
                         Trusted by <span className="text-white/60">Visionaries</span>
@@ -70,7 +70,7 @@ export default function Testimonials() {
                             variants={itemVariants}
                             className="group p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-500 hover:-translate-y-2"
                         >
-                            <div className="mb-8 text-4xl text-white/20 font-serif">"</div>
+                            <div className="mb-8 text-4xl text-white/20 font-serif">&quot;</div>
                             <p className="text-lg text-white/80 mb-8 leading-relaxed min-h-[80px]">
                                 {item.quote}
                             </p>

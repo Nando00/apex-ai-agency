@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 const faqs = [
     {
@@ -21,7 +21,7 @@ const faqs = [
     }
 ];
 
-const containerVariants = {
+const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
         opacity: 1,
@@ -31,7 +31,7 @@ const containerVariants = {
     },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
         opacity: 1,
@@ -57,13 +57,13 @@ export default function FAQ() {
                 {/* Header */}
                 <div className="w-full lg:w-1/3">
                     <span className="text-sm font-mono text-white/60 tracking-wider block mb-4">
-            // FAQ
+                        {"// FAQ"}
                     </span>
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading mb-6">
                         <span className="text-white/60">Questions</span>
                     </h2>
                     <p className="text-white/60 max-w-sm">
-                        Everything you need to know about our services and how we work. Can't find the answer you're looking for? Contact us.
+                        Everything you need to know about our services and how we work. Can&apos;t find the answer you&apos;re looking for? Contact us.
                     </p>
                 </div>
 
