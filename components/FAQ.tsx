@@ -59,8 +59,7 @@ export default function FAQ() {
                     <span className="text-sm font-mono text-white/60 tracking-wider block mb-4">
             // FAQ
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-heading mb-6">
-                        Common <br />
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading mb-6">
                         <span className="text-white/60">Questions</span>
                     </h2>
                     <p className="text-white/60 max-w-sm">

@@ -86,8 +86,7 @@ export default function About() {
                             <span className="text-sm font-mono text-white/60 mb-6 tracking-wider block">
                             // OUR ADVANTAGE
                             </span>
-                            <h2 className="text-5xl md:text-6xl lg:text-7xl font-heading leading-tight mb-12">
-                                Our Unfair <br />
+                            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading leading-tight mb-12">
                                 <span className="text-white/80">Advantage</span>
                             </h2>
                         </motion.div>

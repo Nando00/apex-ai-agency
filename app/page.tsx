@@ -147,9 +147,9 @@ export default function Home() {
           <div className="relative z-10 w-full h-full pointer-events-none">
 
             {/* H1 Section - Aligned with Navigation */}
-            <div className="relative lg:absolute lg:inset-0 flex items-center">
+            <div className="absolute inset-0 flex items-center">
               <div className="w-full max-w-[90%] mx-auto px-8">
-                <div className="w-full lg:w-1/2 pointer-events-auto pt-32 lg:pt-0">
+                <div className="w-full lg:w-1/2 pointer-events-auto flex flex-col items-center text-center lg:items-start lg:text-left">
                   <RotatingText />
 
                   {/* CTA Button */}

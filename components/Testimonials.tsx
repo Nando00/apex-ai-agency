@@ -52,7 +52,7 @@ export default function Testimonials() {
                     <span className="text-sm font-mono text-white/60 tracking-wider block mb-4">
             // WHAT THEY SAY
                     </span>
-                    <h2 className="text-4xl md:text-5xl font-heading">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading">
                         Trusted by <span className="text-white/60">Visionaries</span>
                     </h2>
                 </div>

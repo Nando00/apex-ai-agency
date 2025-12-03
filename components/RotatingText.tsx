@@ -26,7 +26,7 @@ export default function RotatingText() {
   return (
     <div className="relative w-full">
       <h1
-        className={`text-7xl md:text-8xl lg:text-9xl font-heading text-white leading-tight transition-all duration-500 ${isAnimating
+        className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading text-white leading-tight transition-all duration-500 ${isAnimating
           ? "opacity-0 translate-y-10"
           : "opacity-100 translate-y-0"
           }`}

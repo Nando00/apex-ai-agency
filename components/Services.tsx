@@ -74,8 +74,7 @@ export default function Services() {
                         <span className="text-sm font-mono text-white/60 mb-6 tracking-wider">
               // EXPERTISE
                         </span>
-                        <h2 className="text-5xl md:text-6xl lg:text-7xl font-heading text-white leading-tight">
-                            Our Core <br />
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading text-white leading-tight">
                             <span className="text-white/80">Services</span>
                         </h2>
                     </div>
