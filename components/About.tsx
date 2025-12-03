@@ -36,6 +36,27 @@ export default function About() {
                 >
 
 
+                    {/* Left Column - Title & Abstract Visual */}
+                    <div className="w-full lg:w-1/2 flex flex-col justify-between relative items-center lg:items-start ">
+                        <motion.div variants={itemVariants} className="flex flex-col gap-6 ">
+                            <span className="text-sm font-mono text-white/60 mb-6 tracking-wider block">
+                                {"// OUR ADVANTAGE"}
+                            </span>
+                            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading leading-tight mb-12">
+                                <span className="text-white/80">Advantage</span>
+                            </h2>
+                        </motion.div>
+
+                        {/* Abstract Visual / Gradient Placeholder */}
+                        <motion.div variants={itemVariants} className="relative w-full aspect-square max-w-md mx-auto lg:mx-0 mt-8 lg:mt-0">
+                            <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 via-purple-600 to-pink-600 rounded-3xl opacity-80 blur-2xl animate-pulse" />
+                            <div className="absolute inset-4 bg-black/40 backdrop-blur-xl rounded-2xl border border-white/10 flex items-center justify-center overflow-hidden">
+                                <div className="w-full h-full bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20" />
+                                <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black/80" />
+                            </div>
+                        </motion.div>
+                    </div>
+
                     {/* Right Column - Description & Cards */}
                     <div className="w-full lg:w-1/2 flex flex-col justify-center">
 
@@ -77,28 +98,6 @@ export default function About() {
                             </motion.div>
                         </div>
 
-                    </div>
-
-
-                    {/* Left Column - Title & Abstract Visual */}
-                    <div className="w-full lg:w-1/2 flex flex-col justify-between relative items-center lg:items-end ">
-                        <motion.div variants={itemVariants} className="flex flex-col gap-6 lg:mr-12">
-                            <span className="text-sm font-mono text-white/60 mb-6 tracking-wider block">
-                                {"// OUR ADVANTAGE"}
-                            </span>
-                            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading leading-tight mb-12">
-                                <span className="text-white/80">Advantage</span>
-                            </h2>
-                        </motion.div>
-
-                        {/* Abstract Visual / Gradient Placeholder */}
-                        <motion.div variants={itemVariants} className="relative w-full aspect-square max-w-md mx-auto lg:mx-0 mt-8 lg:mt-0">
-                            <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 via-purple-600 to-pink-600 rounded-3xl opacity-80 blur-2xl animate-pulse" />
-                            <div className="absolute inset-4 bg-black/40 backdrop-blur-xl rounded-2xl border border-white/10 flex items-center justify-center overflow-hidden">
-                                <div className="w-full h-full bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20" />
-                                <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black/80" />
-                            </div>
-                        </motion.div>
                     </div>
 
                 </motion.div>
