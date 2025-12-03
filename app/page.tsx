@@ -88,7 +88,7 @@ export default function Home() {
         {/* Hero Section */}
         <section ref={vantaRef} className="relative h-screen w-full overflow-hidden">
           {/* 3D Canvas Background */}
-          <div className="absolute -top-6 right-0 w-full md:w-3/5 h-full" style={{ touchAction: 'pan-y' }}>
+          <div className="absolute -top-6 right-0 w-full md:w-3/5 h-full pointer-events-none md:pointer-events-auto" style={{ touchAction: 'pan-y' }}>
             <Canvas camera={{ position: [1, 3.5, 4.5], fov: 50 }} shadows>
               {/* Ambient light for base illumination - very low for dark look */}
               <ambientLight intensity={0} color="#000000" />
