@@ -1,7 +1,7 @@
 "use client";
 
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Environment } from "@react-three/drei";
+import { Environment } from "@react-three/drei";
 import { EffectComposer, Bloom } from "@react-three/postprocessing";
 import MyModel from "@/components/HexaModel";
 import Navigation from "@/components/Navigation";
@@ -88,7 +88,7 @@ export default function Home() {
         {/* Hero Section */}
         <section ref={vantaRef} className="relative h-screen w-full overflow-hidden">
           {/* 3D Canvas Background */}
-          <div className="absolute -top-6 right-0 w-full md:w-3/5 h-full pointer-events-none md:pointer-events-auto" style={{ touchAction: 'pan-y' }}>
+          <div className="absolute -top-6 right-0 w-full md:w-3/5 h-full pointer-events-none" style={{ touchAction: 'pan-y' }}>
             <Canvas camera={{ position: [1, 3.5, 4.5], fov: 50 }} shadows>
               {/* Ambient light for base illumination - very low for dark look */}
               <ambientLight intensity={0} color="#000000" />
@@ -123,12 +123,7 @@ export default function Home() {
 
 
               <MyModel />
-              <OrbitControls
-                enableDamping
-                dampingFactor={0.05}
-                rotateSpeed={0.5}
-                enableZoom={false}
-              />
+
 
               {/* Bloom effect for subtle glow */}
               <EffectComposer>
