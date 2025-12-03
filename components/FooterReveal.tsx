@@ -18,9 +18,9 @@ export default function FooterReveal({ children }: FooterRevealProps) {
             if (ref.current) {
                 const contentHeight = ref.current.offsetHeight;
                 setHeight(contentHeight);
-                // Enable only if screen is large (>= 1024px) AND content fits in viewport
+                // Enable only if content fits in viewport
                 // This prevents the top of the content from being cut off if it's too tall
-                setIsEnabled(window.innerWidth >= 1024 && contentHeight <= window.innerHeight);
+                setIsEnabled(contentHeight <= window.innerHeight);
             }
         };
 

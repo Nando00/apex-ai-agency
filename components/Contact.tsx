@@ -24,7 +24,7 @@ export default function Contact() {
             </div>
 
             {/* Main Content */}
-            <div className="w-full max-w-[95%] md:max-w-[90%] mx-auto py-12 md:py-24 lg:py-32">
+            <div className="w-full max-w-[95%] md:max-w-[90%] mx-auto py-8 md:py-24 lg:py-32">
                 <div className="flex flex-col lg:flex-row justify-between items-start gap-10 md:gap-16">
 
                     {/* Left: Large Brand Name */}
