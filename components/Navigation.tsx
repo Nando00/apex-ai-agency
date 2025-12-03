@@ -1,6 +1,7 @@
 "use client";
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,7 +28,8 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 px-8 py-6 transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
+      className={`fixed top-0 left-0 right-0 z-50 px-8 py-6 transition-all duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"
+        } ${isMenuOpen ? "bg-white text-black" : "bg-transparent text-white"}`}
     >
       <div className="w-full max-w-[90%] mx-auto flex items-center justify-between">
         {/* Logo */}
@@ -37,14 +39,14 @@ export default function Navigation() {
             alt="Logo"
             width={140}
             height={100}
-            className="object-contain"
+            className={`object-contain transition-all duration-300 ${isMenuOpen ? "invert" : ""}`}
           />
         </div>
 
         {/* Desktop Navigation Menu */}
-        <ul className="hidden md:flex items-center space-x-8 text-sm font-medium text-white/80">
+        <ul className={`hidden md:flex items-center space-x-8 text-sm font-medium ${isMenuOpen ? "text-black/80" : "text-white/80"}`}>
           {['SERVICES', 'ABOUT', 'TESTIMONIALS', 'FAQ', 'CONTACT'].map((item) => (
-            <li key={item} className="hover:text-white transition-colors cursor-pointer">
+            <li key={item} className="hover:text-current transition-colors cursor-pointer">
               <a href={`#${item.toLowerCase()}`}>{item}</a>
             </li>
           ))}
@@ -52,7 +54,7 @@ export default function Navigation() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-white"
+          className={`md:hidden transition-colors duration-300 ${isMenuOpen ? "text-black" : "text-white"}`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <svg
@@ -81,20 +83,30 @@ export default function Navigation() {
       </div>
 
       {/* Mobile Menu Overlay */}
-      {isMenuOpen && (
-        <div className="absolute top-full left-0 w-full bg-white text-black shadow-lg md:hidden flex flex-col items-center py-8 space-y-6 animate-in slide-in-from-top-5 duration-300">
-          {['SERVICES', 'ABOUT', 'TESTIMONIALS', 'FAQ', 'CONTACT'].map((item) => (
-            <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
-              className="text-lg font-medium hover:text-blue-600 transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {item}
-            </a>
-          ))}
-        </div>
-      )}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="absolute top-full left-0 w-full bg-white text-black shadow-lg md:hidden overflow-hidden"
+          >
+            <div className="flex flex-col items-center py-8 space-y-6">
+              {['SERVICES', 'ABOUT', 'TESTIMONIALS', 'FAQ', 'CONTACT'].map((item) => (
+                <a
+                  key={item}
+                  href={`#${item.toLowerCase()}`}
+                  className="text-lg font-medium hover:text-blue-600 transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item}
+                </a>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 }
