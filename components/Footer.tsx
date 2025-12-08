@@ -6,7 +6,7 @@ export default function Footer() {
             {/* Bottom Section */}
             <div className="max-w-[90%] mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-white/40">
                 <p>
-                    © 2025 Apex AI Automation. All rights reserved.
+                    © 2025 Astro Diverge AI Automation. All rights reserved.
                 </p>
 
                 <div className="flex gap-8">

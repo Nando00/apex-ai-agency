@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Apex AI Automation - Investing in Napoleonic Ambitions",
-  description: "Apex AI Automation is a cutting-edge technology firm that empowers businesses with innovative AI solutions.",
+  title: "Astro Diverge AI Automation - Investing in AI Ambitions",
+  description: "Astro Diverge AI Automation is a cutting-edge technology firm that empowers businesses with innovative AI solutions.",
 };
 
 export default function RootLayout({

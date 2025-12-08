@@ -8,7 +8,7 @@ export default function Contact() {
                 <div className="animate-marquee flex gap-8 items-center min-w-full pr-8 flex-shrink-0">
                     {[...Array(10)].map((_, i) => (
                         <React.Fragment key={i}>
-                            <span className="text-2xl md:text-4xl lg:text-6xl font-heading font-bold tracking-tight">Apex AI Automation</span>
+                            <span className="text-2xl md:text-4xl lg:text-6xl font-heading font-bold tracking-tight">Astro Diverge AI Automation</span>
                             <span className="text-xs md:text-sm font-mono text-gray-500">[2025]</span>
                         </React.Fragment>
                     ))}
@@ -16,7 +16,7 @@ export default function Contact() {
                 <div className="animate-marquee flex gap-8 items-center min-w-full pr-8 flex-shrink-0" aria-hidden="true">
                     {[...Array(10)].map((_, i) => (
                         <React.Fragment key={`clone-${i}`}>
-                            <span className="text-2xl md:text-4xl lg:text-6xl font-heading font-bold tracking-tight">Apex AI Automation</span>
+                            <span className="text-2xl md:text-4xl lg:text-6xl font-heading font-bold tracking-tight">Astro Diverge AI Automation</span>
                             <span className="text-xs md:text-sm font-mono text-gray-500">[2025]</span>
                         </React.Fragment>
                     ))}
@@ -30,8 +30,8 @@ export default function Contact() {
                     {/* Left: Large Brand Name */}
                     <div className="w-full lg:w-1/2">
                         <h2 className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-heading tracking-tighter leading-[0.9]">
-                            Apex AI <br />
-                            Automation
+                            Astro Diverge <br />
+                            AI Automation
                         </h2>
 
                         <div className="mt-8 md:mt-16 space-y-2">
@@ -40,10 +40,10 @@ export default function Contact() {
                                 Get in touch with us
                             </div>
                             <a
-                                href="mailto:hello@apexai.com"
+                                href="mailto:support@astrodiverge.com"
                                 className="text-xl md:text-2xl lg:text-3xl font-medium hover:text-blue-600 transition-colors block break-all"
                             >
-                                hello@apexai.com
+                                support@astrodiverge.com
                             </a>
                         </div>
                     </div>
