@@ -4,6 +4,12 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Astro Diverge AI Automation - Investing in AI Ambitions",
   description: "Astro Diverge AI Automation is a cutting-edge technology firm that empowers businesses with innovative AI solutions.",
+  icons: {
+    icon: "/favicon-astro.png",
+  },
+  openGraph: {
+    images: "/thumbnail.png",
+  },
 };
 
 export default function RootLayout({
