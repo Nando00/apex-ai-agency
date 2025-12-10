@@ -52,6 +52,18 @@ export default function Navigation() {
           ))}
         </ul>
 
+        {/* Desktop CTA Button */}
+        <div className="hidden md:block ml-8">
+          <a
+            href="https://cal.com/astrodiverge/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`px-6 py-2 rounded-full font-bold text-sm tracking-wide transition-all duration-300 ${isMenuOpen ? "bg-black text-white hover:bg-gray-800" : "bg-white text-black hover:bg-gray-200"}`}
+          >
+            BOOK NOW
+          </a>
+        </div>
+
         {/* Mobile Menu Button */}
         <button
           className={`md:hidden transition-colors duration-300 ${isMenuOpen ? "text-black" : "text-white"}`}
@@ -103,6 +115,17 @@ export default function Navigation() {
                   {item}
                 </a>
               ))}
+            </div>
+            {/* Mobile CTA Button */}
+            <div className="px-8 pb-8 w-full">
+              <a
+                href="https://cal.com/astrodiverge/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full py-4 bg-black text-white text-center rounded-full font-bold text-lg tracking-wide hover:bg-gray-800 transition-colors"
+              >
+                BOOK NOW
+              </a>
             </div>
           </motion.div>
         )}

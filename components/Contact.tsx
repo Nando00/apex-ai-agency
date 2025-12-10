@@ -45,6 +45,16 @@ export default function Contact() {
                             >
                                 support@astrodiverge.com
                             </a>
+                            <div className="mt-8">
+                                <a
+                                    href="https://cal.com/astrodiverge/30min"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-block px-8 py-3 bg-black text-white rounded-full font-bold text-lg hover:bg-gray-800 transition-colors shadow-lg"
+                                >
+                                    BOOK NOW
+                                </a>
+                            </div>
                         </div>
                     </div>
 

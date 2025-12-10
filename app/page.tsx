@@ -149,9 +149,12 @@ export default function Home() {
 
                   {/* CTA Button */}
                   <div className="mt-8">
-                    <button className="px-10 py-4 bg-white text-black rounded-full hover:bg-gray-200 transition-all duration-300 font-bold text-lg tracking-wide shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)]">
+                    <a
+                      href="#services"
+                      className="inline-block px-10 py-4 bg-white text-black rounded-full hover:bg-gray-200 transition-all duration-300 font-bold text-lg tracking-wide shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)]"
+                    >
                       LEARN MORE
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
