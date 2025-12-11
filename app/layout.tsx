@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Astro Diverge AI Automation - Investing in AI Ambitions",
@@ -29,6 +30,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased font-sans">
         {children}
+        <Analytics />
       </body>
     </html>
   );
